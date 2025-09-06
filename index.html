@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>1-4 句子跟讀挑戰</title>
+<title>14-2 句子跟讀挑戰</title>
 <style>
 body { font-family: sans-serif; max-width: 600px; margin: auto; text-align: center; padding: 30px 15px; }
 #logo { width: 150px; max-width: 80%; margin-bottom: 10px; }
@@ -28,7 +28,7 @@ audio { width: 100%; max-width: 500px; margin: 0 auto; display: block; }
 </head>
 <body>
 <img id="logo" src="logo.png" alt="Logo">
-<div id="game-title">1-4 句子跟讀挑戰</div>
+<div id="game-title">14-2 句子跟讀挑戰</div>
 
 <div id="nickname-container">
   <div style="font-size:20px; font-weight:bold; margin-bottom:10px;">歡迎挑戰者到來</div>
@@ -71,16 +71,16 @@ audio { width: 100%; max-width: 500px; margin: 0 auto; display: block; }
 <script src="recorder.js"></script>
 <script>
 const questions = [
-  { audio: "audio/41010401S.mp3", text: "계획대로 일이 잘 진행되어 가고 있는 것 같아요.", keywords: "계획대로, 일, 진행되다, 잘, 같다" },
-  { audio: "audio/41010402S.mp3", text: "노래 가사를 듣는 대로 써 보세요.", keywords: "노래, 가사, 듣다, 대로, 쓰다" },
-  { audio: "audio/41010403S.mp3", text: "내 마음대로 일을 처리하다가 다 망쳐버렸어요.", keywords: "마음대로, 일, 처리하다, 망치다" },
-  { audio: "audio/41010404S.mp3", text: "마음이 가는 대로 사는 게 정말 행복한 삶 아닐까?", keywords: "마음, 가다, 대로, 살다, 행복하다" },
-  { audio: "audio/41010405S.mp3", text: "너의 말대로 다시 한번 생각해 보니까, 그게 맞는 것 같아.", keywords: "말대로, 다시, 생각하다, 맞다" },
-  { audio: "audio/41010406S.mp3", text: "“생각하는 대로 그렇게 된다”라는 말 정말 진짜일까요?", keywords: "생각하다, 대로, 되다, 말, 진짜" },
-  { audio: "audio/41010407S.mp3", text: "고객님께서 주문하신 대로 음식을 준비해 놓았습니다.", keywords: "고객님, 주문하다, 대로, 음식, 준비하다" },
-  { audio: "audio/41010408S.mp3", text: "모든 일은 결국 마음먹는 대로 되는 거야!", keywords: "모든, 일, 마음먹다, 대로, 되다" },
-  { audio: "audio/41010409S.mp3", text: "첫 만남은 항상 계획대로 되지 않아요!", keywords: "첫, 만남, 항상, 계획대로, 되다" },
-  { audio: "audio/41010410S.mp3", text: "네가 원하는 대로 다 맞춰줄 테니까 나를 떠나지 마!", keywords: "원하다, 대로, 맞추다, 떠나다, 않다" }
+{ audio: "audio/22140201S.mp3", text: "감기에 걸렸을 때는 이 약을 꼭 드세요.", keywords: "감기, 걸리다, 때, 약, 드시다" },
+{ audio: "audio/22140202S.mp3", text: "처음 한국에 왔을 때는 모든 게 다 신기했어요.", keywords: "처음, 한국, 오다, 때, 신기하다" },
+{ audio: "audio/22140203S.mp3", text: "한국은 첫 월급을 받았을 때 부모님께 내복을 선물하는 문화가 있어요.", keywords: "첫, 월급, 받다, 때, 부모님, 내복, 선물하다, 문화" },
+{ audio: "audio/22140204S.mp3", text: "한국어 처음 배웠을 때 사용했던 노트와 책이에요.", keywords: "한국어, 처음, 배우다, 때, 사용하다, 노트, 책" },
+{ audio: "audio/22140205S.mp3", text: "초등학생이었을 때는 여름 방학이 가장 기다려졌어.", keywords: "초등학생, 때, 여름, 방학, 기다리다" },
+{ audio: "audio/22140206S.mp3", text: "학생이었을 때는 군인이 아저씨 같았는데 지금은 다 동생이에요.", keywords: "학생, 때, 군인, 아저씨, 같다, 지금, 동생" },
+{ audio: "audio/22140207S.mp3", text: "부모님이 제 나이였을 때 저를 낳은 것이 믿기지 않아요.", keywords: "부모님, 나이, 때, 낳다, 믿기다" },
+{ audio: "audio/22140208S.mp3", text: "친구 결혼식 갔을 때 아주 감동이었어.", keywords: "친구, 결혼식, 가다, 때, 감동" },
+{ audio: "audio/22140209S.mp3", text: "미안해요. 저한테 전화했을 때 자고 있었어요.", keywords: "미안하다, 전화하다, 때, 자다" },
+{ audio: "audio/22140210S.mp3", text: "이 가방 어렸을 때 제가 사용한 브랜드의 가방인 것 같아요!", keywords: "가방, 어리다, 때, 사용하다, 브랜드" }
 ];
 
 let currentQuestion = 0;
@@ -89,7 +89,7 @@ let recorder, audioContext, stream;
 let startTime = Date.now();
 let completedQuestions = [];
 
-const unit = "41-1-4 句子跟讀挑戰";
+const unit = "22-14-2 句子跟讀挑戰";
 
 const questionText = document.getElementById("question-text");
 const keywordsDiv = document.getElementById("keywords");
